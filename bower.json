@@ -6,7 +6,7 @@
 	"readmeFilename": "README.md",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/brianreavis/selectize.js.git"
+		"url": "http://gitlab.p53.uk/web/selectize.js.git"
 	},
 	"main": [
 		"dist/css/selectize.css",
