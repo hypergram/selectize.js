@@ -1,5 +1,6 @@
 {
-	"name": "selectize",
+	"name": "selectize.js",
+	"version": "0.12.2",
 	"keywords": ["select", "ui", "form", "input", "control", "autocomplete", "tagging", "tag"],
 	"description": "Selectize is a jQuery-based custom <select> UI control. Useful for tagging, contact lists, country selectors, etc.",
 	"license": "Apache License, Version 2.0",
