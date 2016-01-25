@@ -2781,7 +2781,7 @@
 		 */
 		positionDropdown: function() {
 			var $control = this.$control;
-			var offset = this.settings.dropdownParent === 'body' ? $control.offset() : $control.position();
+			var offset = this.settings.dropdownParent === null ? $control.position() : $control.offset();
 			offset.top += $control.outerHeight(true);
 	
 			this.$dropdown.css({
