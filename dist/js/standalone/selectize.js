@@ -1,4 +1,4 @@
-/**
+﻿/**
  * sifter.js
  * Copyright (c) 2013 Brian Reavis & contributors
  *
@@ -1954,25 +1954,25 @@
 			self.focus();
 		},
 	
-		/**
-		 * Hides the input element out of view, while
-		 * retaining its focus.
-		 */
-		hideInput: function() {
-			var self = this;
-	
-			self.setTextboxValue('');
-			self.$control_input.css({opacity: 0, position: 'absolute', left: self.rtl ? 10000 : -10000});
-			self.isInputHidden = true;
-		},
-	
-		/**
-		 * Restores input visibility.
-		 */
-		showInput: function() {
-			this.$control_input.css({opacity: 1, position: 'relative', left: 0});
-			this.isInputHidden = false;
-		},
+/**
+ * Hides the input element out of view, while
+ * retaining its focus.
+ */
+hideInput: function() {
+  var self = this;
+
+  self.setTextboxValue('');
+  self.$control_input.css({opacity: 0, position: 'absolute', top: -$('body').height()-100});
+  self.isInputHidden = true;
+},
+
+/**
+ * Restores input visibility.
+ */
+showInput: function() {
+  this.$control_input.css({opacity: 1, position: 'relative', top: 0});
+  this.isInputHidden = false;
+},
 	
 		/**
 		 * Gives the control focus.
