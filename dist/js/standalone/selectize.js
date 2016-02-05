@@ -1962,7 +1962,7 @@ hideInput: function() {
   var self = this;
 
   self.setTextboxValue('');
-  self.$control_input.css({opacity: 0, position: 'absolute', top: -$('body').height()-100});
+  self.$control_input.css({opacity: 0, position: 'absolute', top: -$('body').css('z-index', '0')});
   self.isInputHidden = true;
 },
 
